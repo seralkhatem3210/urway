@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo noupdate="1">
+    <record id="module_payment_urway" model="payment.provider">
+        <field name="name">Urway (Redirect)</field>
+        <field name="display_as">MADA, MasterCard, VISA (Powered by URWAY)</field>
+        <field name="image_128" type="base64" file="payment_urway/static/description/icon.png"/><!-- . . . -->
+        <field name="module_id" ref="base.module_payment_urway"/>
+        <field name="code">urway</field>
+        <field name="redirect_form_view_id" ref="redirect_form"/>
+    </record>
+</odoo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="redirect_form">
+        <form t-att-action="api_url" method="post" class="o_payment_form">
+            <!-- Add fields needed for the payment submission -->
+            <input type="hidden" name="trackid" t-att-value="trackid"/>
+            <input type="hidden" name="amount" t-att-value="amount"/>
+            <input type="hidden" name="currency" t-att-value="currency"/>
+            <input type="hidden" name="merchantIp" t-att-value="merchant_ip"/>
+            <input type="hidden" name="customerEmail" t-att-value="customer_email"/>
+            <input type="hidden" name="udf1" t-att-value="udf1"/>
+            <input type="hidden" name="udf2" t-att-value="udf2"/>
+            <input type="hidden" name="requestHash" t-att-value="request_hash"/>
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Pay Now  </button>
+        </form>
+    </template>
+
+</odoo>
